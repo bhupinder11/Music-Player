@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 85%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#left{
+    height: 100%;
+    width: 45%;
+    background-color: lightgrey;
+    /* background-image: url(https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg); */
+    background-size: cover;
+}
+
+#right{
+    height: 100%;
+    width: 55%;
+    /* background-color: rgb(48, 47, 47); */
+    padding: 0 3vw;
+}
+
+#right h3{
+    font-size: 35px;
+}
+
+#all-songs{
+    height: 85%;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+
+#all-songs :hover{
+    background-color: rgb(254, 0, 0);
+}
+
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding: 15px 10px;
+}
+
+
+
+.song-card:nth-last-child(1){
+    /* background-color: red; */
+    border-bottom:1px solid grey ;
+}
+
+.song-card .part1{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.song-card img{
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.song-card h2{
+    font-size: 24px;
+}
+
+.song-card h6{
+    font-size: 15px;
+    pointer-events: none;
+}
+
+#player{
+    height: 15%;
+    width: 100%;
+    background-image: linear-gradient(black, rgb(24, 24, 24));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#player h3{
+    background-color: rgb(75, 75, 75);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player h3 i{
+    font-size: 25px;
+}
+
+#player h3:active{
+    scale: 0.95;
+}
